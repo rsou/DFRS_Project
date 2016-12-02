@@ -1,0 +1,17 @@
+module frontend {
+
+	interface DFRSFrontEnd {
+	
+		string transferReservation(in string passengerID, in string currentCity, in string otherCity);
+		string bookFlight(in string firstName, in string lastName, in string phoneNumber, in string address, in string destination, in string dateOfFlight, in string flightClass);
+		string getBookedFlightCount(in long recordType);
+		string editFlightRecord (in string recordID, in string fieldName, in string newValue);
+		string allFlights();
+		string allBookings();
+		
+		void shutDown();
+
+		
+	};
+};
+
